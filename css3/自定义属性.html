@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<script>
+	window.onload = function(){ 
+		var oInp = document.querySelector('input');
+		for(var name in oInp.dataset){ 
+			document.write(name+'='+oInp.dataset[name]+'<br/>');
+		}
+	};
+</script>
+</head>
+
+<body>
+	<input type="text" data-index="aaa" data-index2="bbb" data-index3="ccc"/>
+</body>
+</html>
